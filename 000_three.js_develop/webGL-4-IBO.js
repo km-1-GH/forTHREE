@@ -33,10 +33,10 @@ const fShader = createShader(gl.FRAGMENT_SHADER,fragmentShader);
 
 const prg = createProgram(vShader,fShader);
 
-const attLocation = new Array(2);
+const attLocation = [];
 attLocation[0] = gl.getAttribLocation(prg,'position');
 attLocation[1] = gl.getAttribLocation(prg,'color');
-const attStride = new Array(2);
+const attStride = [];
 attStride[0] = 3;
 attStride[1] = 4;
 
